@@ -13,6 +13,7 @@ void main() {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
+        fontFamily: 'Myriad pro',
         brightness: Brightness.dark,
       ),
       home: Note_views(),
