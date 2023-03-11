@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:note_app/views/views.dart';
 
 
 void main() {
@@ -14,7 +15,7 @@ void main() {
       theme: ThemeData(
         brightness: Brightness.dark,
       ),
-      home: Scaffold(),
+      home: Note_views(),
     );
   }
 }
