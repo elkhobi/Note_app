@@ -6,10 +6,12 @@ class item_Note extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      padding: EdgeInsets.symmetric(
+        vertical: 15,
+      ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        color: Color.fromARGB(255, 204, 0, 255),
+        color: Color.fromARGB(255, 6, 255, 230),
       ),
       child: Column(
         children: [
@@ -17,18 +19,27 @@ class item_Note extends StatelessWidget {
             title: Text(
               'Todays grocery list',
               style: TextStyle(
-                color: Colors.white,
-                fontSize: 16,
+                color: Colors.black,
+                fontSize: 22,
               ),
             ),
-            subtitle: Text(
-              "june 26,2022 08:05 PM",
-              style: TextStyle(
-                fontSize: 10,
-                color: Colors.black45,
+            subtitle: Padding(
+              padding: const EdgeInsets.only(
+                top: 5,
+                left: 80,
+                ),
+              child: Text(
+                "june 26,2022 08:05 PM",
+                style: TextStyle(
+                  fontSize: 15,
+                  color: Colors.black.withOpacity(0.4),
+                ),
               ),
             ),
-            trailing: IconButton(onPressed: () {}, icon: Icon(Icons.delete)),
+            trailing: IconButton(onPressed: () {}, icon: Icon(Icons.delete,
+            color: Colors.black,
+            size: 30,
+            )),
           ),
         ],
       ),
