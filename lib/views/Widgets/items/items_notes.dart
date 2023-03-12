@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
+
 class item_Note extends StatelessWidget {
-  const item_Note({Key? key}) : super(key: key);
+ item_Note({required this.coloritem });
+
+  Color ? coloritem ;
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +14,7 @@ class item_Note extends StatelessWidget {
       ),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(15),
-        color: Color.fromARGB(255, 6, 255, 230),
+        color: coloritem,
       ),
       child: Column(
         children: [
@@ -37,7 +40,7 @@ class item_Note extends StatelessWidget {
               ),
             ),
             trailing: IconButton(onPressed: () {}, icon: Icon(Icons.delete,
-            color: Colors.black,
+            color: Colors.black.withOpacity(0.38),
             size: 30,
             )),
           ),
